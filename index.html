@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinFlow Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <section
+        class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+        <!-- Background Glow Effects -->
+        <div class="absolute top-0 left-0 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl animate-pulse"></div>
+
+        <div class="relative w-full max-w-sm px-6 py-10 bg-slate-900/70 backdrop-blur-xl  shadow-2xl rounded-3xl">
+            <!-- Header -->
+            <header class="text-center mt-8">
+                <div class="relative inline-flex justify-center items-center w-48 h-24">
+                    <img class="w-48 opacity-50" src="assets/bg.png" alt="Brand Background" />
+                    <img class="w-16 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 drop-shadow-lg"
+                        src="assets/Group.png" alt="Brand Logo" />
+                </div>
+                <h1
+                    class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-500 tracking-widest">
+                    SECURE LOGIN
+                </h1>
+                <p class="text-sm text-gray-400 mt-2 tracking-wide">
+                    Access your account securely
+                </p>
+            </header>
+
+            <!-- Card -->
+            <section
+                class="card w-full bg-transparent border border-cyan-400/10 shadow-lg hover:shadow-cyan-500/30 transition duration-500 ease-out mt-8">
+                <div class="card-body p-6">
+                    <h2 class="card-title text-xl font-bold mb-6 text-cyan-400">
+                        Account Access
+                    </h2>
+
+                    <form>
+                        <div class="form-control mb-5">
+                            <label class="label">
+                                <span class="label-text text-sm text-gray-300">Account Number</span>
+                            </label>
+                            <input id="account_name" type="number" placeholder="Enter your Account Number"
+                                class="input input-bordered input-info w-full bg-slate-800/80 text-gray-200 focus:ring-2 focus:ring-cyan-400 transition-all duration-300 rounded-xl" value="01763191247"/>
+                        </div>
+
+                        <div class="form-control mb-5">
+                            <label class="label">
+                                <span class="label-text text-sm text-gray-300">PIN</span>
+                            </label>
+                            <input id="pin" type="password" placeholder="Enter your PIN"
+                                class="input input-bordered input-info w-full bg-slate-800/80 text-gray-200 focus:ring-2 focus:ring-indigo-400 transition-all duration-300 rounded-xl" />
+                            <label class="label pt-2 justify-end">
+                                <a href="#"
+                                    class="text-sm text-cyan-400 hover:text-cyan-300 transition duration-300">Forgot
+                                    PIN?</a>
+                            </label>
+                        </div>
+
+                        <div class="form-control mt-8">
+                            <button id="sign_btn"
+                                class="btn bg-gradient-to-r from-cyan-500 to-indigo-500 border-none text-white font-semibold text-lg tracking-wider hover:from-cyan-400 hover:to-indigo-400 shadow-lg hover:shadow-cyan-500/40 transform hover:scale-105 transition duration-300 ease-out rounded-xl">
+                                Sign In
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="script/sign.js">
+
+    </script>
+</body>
+
+</html>
