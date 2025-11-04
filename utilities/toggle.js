@@ -1,0 +1,9 @@
+handleToggle('cashOutSection','none')
+document.getElementById('addMoney').addEventListener('click',function(){
+    handleToggle('cashOutSection','none');
+    handleToggle('addMoneySection','block');
+})
+document.getElementById('cashOut').addEventListener('click',function(){
+    handleToggle('cashOutSection','block');
+    handleToggle('addMoneySection','none');
+}) 
