@@ -1,9 +1,0 @@
-document.getElementById('cashOutSection').style.display='none'
-document.getElementById('addMoney').addEventListener('click',function(){
-    document.getElementById('cashOutSection').style.display='none'
-    document.getElementById('addMoneySection').style.display='block'
-})
-document.getElementById('cashOut').addEventListener('click',function(){
-    document.getElementById('cashOutSection').style.display='block'
-    document.getElementById('addMoneySection').style.display='none'
-})
