@@ -8,6 +8,7 @@ document.getElementById('addAmount').addEventListener('click', function (event) 
     const pin = getInputElementById('pin');
     const AccountName = document.getElementById('account_name').value;
     const randomID = generateRandomID();
+    const selectBank = document.getElementById('allBank').value;
 
     if (AccountName.length === 11) {
         if (pin === 12345) {
@@ -27,6 +28,7 @@ document.getElementById('addAmount').addEventListener('click', function (event) 
                               <td class="py-3 px-4"> ${randomID} </td>
                              <td class="py-3 px-4">Deposit</td>
                              <td class="py-3 px-4"> ${addAmount} </td>
+                             <td class="py-3 px-4"> ${selectBank} </td>
                             <td class="py-3 px-4 text-green-600 font-medium">Completed</td>`;
 
                 tbody.appendChild(tr);

@@ -183,7 +183,7 @@
                 <!-- Service Select -->
                 <div class="form-control space-y-2">
                     <label class="label text-gray-300 text-sm font-medium">Select Service</label>
-                    <select
+                    <select id="allBank"
                         class="select select-bordered w-full bg-slate-900/70 text-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-400 transition">
                         <option disabled selected>Pick a service</option>
                         <option value="Bkash">Bkash</option>
@@ -203,8 +203,7 @@
                 <div class="form-control space-y-2">
                     <label class="label text-gray-300 text-sm font-medium">Bank Account Number</label>
                     <input id="account_name" type="number" placeholder="Enter 11 digit  Account Number"
-                        class="input input-bordered w-full bg-slate-900/70 text-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-400 transition"
-                        value="87450186258" />
+                        class="input input-bordered w-full bg-slate-900/70 text-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-400 transition"/>
                 </div>
                 <!-- Add Amount-->
                 <div class="form-control space-y-2">
@@ -238,14 +237,13 @@
                 <!-- Account Number -->
                 <div class="form-control space-y-2">
                     <label class="label text-gray-300 text-sm font-medium">Bank Account Number</label>
-                    <input id="account_name" type="number" placeholder="Enter 11 digit  Account Number"
-                        class="input input-bordered w-full bg-slate-900/70 text-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-400 transition"
-                        value="87450186258" />
+                    <input id="cashOut_Number" type="number" placeholder="Enter 11 digit  Account Number"
+                        class="input input-bordered w-full bg-slate-900/70 text-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-400 transition"/>
                 </div>
                 <!-- Add Amount-->
                 <div class="form-control space-y-2">
                     <label class="label text-gray-300 text-sm font-medium">Cash Out Amount</label>
-                    <input id="CashOutAmount" type="number" placeholder="Amount to Withdraw"
+                    <input id="CashOutMoney" type="number" placeholder="Amount to Withdraw"
                         class="input input-bordered w-full bg-slate-900/70 text-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-400 transition" />
                 </div>
 
@@ -281,6 +279,7 @@
                                 <th class="py-3 px-4 font-semibold">Transaction ID</th>
                                 <th class="py-3 px-4 font-semibold">Type</th>
                                 <th class="py-3 px-4 font-semibold">Amount</th>
+                                <th class="py-3 px-4 font-semibold">Method</th>
                                 <th class="py-3 px-4 font-semibold">Status</th>
                             </tr>
                         </thead>
@@ -296,6 +295,7 @@
 
 
     </main>
+      <script src="script/sign.js"></script>
     <script src="utilities/utilities.js"></script>
     <script src="utilities/toggle.js"></script>
     <script src="script/addMoney.js"> </script>
