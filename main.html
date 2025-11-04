@@ -265,33 +265,35 @@
             </form>
         </section>
 
-        <section id="transaction" class="py-10 px-5 min-h-screen">
-            <div class="max-w-6xl mx-auto bg-slate-800/60 p-10 rounded-2xl shadow-xl border border-cyan-500/20 text-white">
-                <h1 class="text-2xl font-bold  mb-6 border-b pb-3">
-                    Transaction History
-                </h1>
+       <section id="transaction" class="py-10 px-4 sm:px-6 lg:px-10 min-h-screen  text-white">
+  <div class="max-w-6xl mx-auto bg-slate-800/70 p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl border border-cyan-500/20">
+    <h1 class="text-xl sm:text-2xl font-bold mb-6 border-b border-cyan-500/30 pb-3 flex items-center justify-between">
+      <span>Transaction History</span>
+      <span class="hidden sm:inline text-cyan-400 text-sm font-normal">Updated: Today</span>
+    </h1>
 
-                <div class="overflow-x-auto">
-                    <table class="w-full border-collapse">
-                        <thead>
-                            <tr class="bg-slate-900/70 text-left  uppercase text-sm">
-                                <th class="py-3 px-4 font-semibold">AccountName</th>
-                                <th class="py-3 px-4 font-semibold">Transaction ID</th>
-                                <th class="py-3 px-4 font-semibold">Type</th>
-                                <th class="py-3 px-4 font-semibold">Amount</th>
-                                <th class="py-3 px-4 font-semibold">Method</th>
-                                <th class="py-3 px-4 font-semibold">Status</th>
-                            </tr>
-                        </thead>
+    <!-- Table Container -->
+    <div class="overflow-x-auto rounded-lg border border-slate-700/50">
+      <table class="w-full border-collapse text-sm sm:text-base">
+        <thead>
+          <tr class="bg-slate-900/70 text-left uppercase text-xs sm:text-sm">
+            <th class="py-3 px-4 font-semibold whitespace-nowrap">Account Number</th>
+            <th class="py-3 px-4 font-semibold whitespace-nowrap">Transaction ID</th>
+            <th class="py-3 px-4 font-semibold whitespace-nowrap">Type</th>
+            <th class="py-3 px-4 font-semibold whitespace-nowrap">Amount</th>
+            <th class="py-3 px-4 font-semibold whitespace-nowrap">Method</th>
+            <th class="py-3 px-4 font-semibold whitespace-nowrap">Status</th>
+          </tr>
+        </thead>
 
-                        <tbody id="transaction_data" class="">
-                            
+        <tbody id="transaction_data">
+          <!-- Example Row -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
 
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
 
 
     </main>
