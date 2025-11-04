@@ -21,7 +21,7 @@ document.getElementById('addAmount').addEventListener('click', function (event) 
 
                 const tbody = document.getElementById("transaction_data");
                 const tr = document.createElement('tr');
-                tr.classList.add("border-b", "hover:bg-gray-50", "transition");
+                tr.classList.add("border-b", "hover:bg-slate-900/70", "transition");
                 tr.innerHTML = `
                               <td class="py-3 px-4">${AccountName}</td>
                               <td class="py-3 px-4"> ${randomID} </td>
