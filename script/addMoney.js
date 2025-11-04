@@ -10,7 +10,8 @@ document.getElementById('addMoney_btn').addEventListener('click', function (even
         if (pin === 12345) {
             if (addMoney > 0) {
                 const newBalance = mainBalance + addMoney;
-                document.getElementById('balance').innerText = newBalance;
+                // document.getElementById('balance').innerText = newBalance;
+                getInnerTextByIdAndValue('balance',newBalance)
                 document.getElementById('addMoneyForm').reset()
             } else {
                 alert('Please enter a valid amount greater than 0.');
